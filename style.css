@@ -33,6 +33,7 @@ header {
   padding: 24px 148px;
   max-width: 1024px;
   z-index: 10;
+  transition: padding 0.3s;
 }
 
 header img {
@@ -231,16 +232,17 @@ header button:active {
   height: 300px;
   width: 214px;
   border-radius: 10px;
+  transition: height 0.3s, width 0.15s;
 }
 
 .trending-number {
   position: absolute;
   bottom: 2px;
   left: -16px;
-  font-size: 92px;
+  font-size: 132px;
   font-weight: 900;
   color: black;
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 2px #ffffff;
 }
 
 .reason {
@@ -330,8 +332,9 @@ header button:active {
 }
 
 .membership-section {
-  padding: 80px;
+  padding: 80px 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 footer {
@@ -391,6 +394,17 @@ footer select {
   header img {
     height: 24px;
   }
+
+  .trending-card img {
+    height: 196px;
+    width: 140px;
+  }
+
+  .trending-number {
+    font-size: 96px;
+  -webkit-text-stroke: 1px #ffffff;
+
+  }
 }
 
 @media (max-width : 768px) {
@@ -404,6 +418,25 @@ footer select {
 
   .nav-grid {
     grid-template-columns: auto;
+  }
+
+  .main-div {
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 24px;
+  }
+
+  .trending-card img {
+    height: 156px;
+    width: 112px;
+  }
+
+  .trending-number {
+    font-size: 96px;
+      -webkit-text-stroke: 1px #ffffff;
+
   }
 
 }
